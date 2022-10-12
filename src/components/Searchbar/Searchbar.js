@@ -23,7 +23,7 @@ export default class Searchbar extends Component {
   handleSubmit = event => {
     event.preventDefault();
     if (this.state.searchItem.trim() === '') {
-      toast.error('Поле не може бути порожнім!', { position: 'top-center' });
+      toast.error('The field cannot be empty!', { position: 'top-center' });
       this.setState({ searchItem: '' });
       return;
     }
