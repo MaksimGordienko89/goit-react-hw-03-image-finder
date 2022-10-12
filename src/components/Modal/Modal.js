@@ -9,7 +9,7 @@ export default class Modal extends Component {
   static propTypes = { children: PropTypes.node.isRequired };
 
   componentDidMount() {
-    window.addEventListener('keydown', this.handleKeyDown);
+    window.addEventListener('click', this.handleKeyDown);
   }
 
   componentWillUnmount() {

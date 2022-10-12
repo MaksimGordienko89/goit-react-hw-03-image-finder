@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { App } from 'components/App';
+import App from 'components/App';
 import { GlobalStyle } from './index.styled.jsx';
 import 'react-toastify/dist/ReactToastify.css';
 
