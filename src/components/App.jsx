@@ -46,12 +46,14 @@ class App extends Component {
           status: 'resolved',
         }));
         if (response.data.hits.length === 0) {
-          toast.error('Неправильный запрос, давай по новой!', {
+          toast.error('Incorrect request, let is make a new one!', {
             position: 'top-center',
           });
         }
       } catch (error) {
-        toast.error('Все пропало!', { position: 'top-center' });
+        toast.error('The request returned an error', {
+          position: 'top-center',
+        });
         this.setState({ status: 'rejected' });
       }
     }
